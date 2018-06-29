@@ -6,62 +6,33 @@
 \namesection{}{Andrew Liu}
 {
   \urlstyle{same}\url{https://andrew.cloud/} \\
-  \href{mailto:aliu1@umd.edu}{aliu1@umd.edu} | 202-905-9225 | \href{http://linkedin.com/in/liuandrewk}{http://linkedin.com/in/liuandrewk}
+  \href{mailto:aliu1@umd.edu}{aliu1@umd.edu} | \href{https://linkedin.com/in/liuandrewk}{http://linkedin.com/in/liuandrewk} | 202-905-9225
 }
 
 \section{Education}
 \runsubsection{University of Maryland, College Park}
 \descript{| BS in Computer Science, minor in Statistics}
 \location{Sept 2013 - May 2017 | College Park, MD}
-GPA: 3.97/4.0 \textbullet{} Magna Cum Laude
 \begin{tightemize}
-\item Advanced Cybersecurity Experience for Students (ACES) Honors Program
-\item Leidos Cybersecurity Scholar – Department scholarship recognizing excellence and involvement in cybersecurity
-\item John D. Gannon Scholar – Computer science departmental scholarship
-\item Gannon Portal Scholar – Departmental scholarship recognizing commitment to teaching and research
-\item President’s Scholar – Four year merit-based scholarship
+\item GPA: 3.97/4.0 --- Magna Cum Laude
+\item Member of the ACES Cybersecurity Honors Program and recipient of the President's scholarship
 \end{tightemize}
 \sectionsep
 
-\section{Technical Skills}
-\begin{minipage}[t]{.45\textwidth}
-\subsection{Programming Languages}
-Java
-\textbullet{} C/C++
-\textbullet{} Ruby
-\textbullet{} x86  assembly
-\textbullet{} Python
-\textbullet{} MATLAB
-\textbullet{} JavaScript
-\textbullet{} OCaml
-\textbullet{} SAS
-\textbullet{} Prolog
-\textbullet{} HTML/CSS
-\sectionsep
-\end{minipage}
-\hfill
-\begin{minipage}[t]{.45\textwidth}
-\subsection{Technologies}
-Git
-\textbullet{} Vim
-\textbullet{} React.js
-\textbullet{} Eclipse
-\textbullet{} IDA  Pro
-\textbullet{} GDB
-\textbullet{} Wireshark
-\textbullet{} Nmap
-\textbullet{} Netcat
-\textbullet{} tcpdump
-\end{minipage}
-
 \section{Experience}
+
+\runsubsection{Google}
+\descript{| Software Engineer }
+\location{August 2017 – Present | Mountain View, CA}
+% TODO Fill out this section.
+\sectionsep
 
 \runsubsection{Dropbox}
 \descript{| Software Engineering Intern }
 \location{May 2016 – Aug 2016 | San Francisco, CA}
 \begin{tightemize}
-\item Improved Dropbox website performance for routes that affect user experience for users in Dropbox teams. Performance gains generally come from fixing synchronous or blocking operations in the metaserver backend.
-\item Empowered non-admin members of Dropbox teams to communicate with team admins by implementing a feature that allows team members to request to upgrade the team into a Dropbox for Business team to admins.
+\item Cut approximately one third of the load time for the Dropbox website by analyzing blocking operations and replacing them with asynchronous tasks.
+\item Promoted team upgrades to Dropbox Business by building an end-to-end flow in React.js and Python that allowed members of Dropbox teams to request an upgrade to Dropbox Business to their admins.
 \end{tightemize}
 \sectionsep
 
@@ -69,12 +40,12 @@ Git
 \descript{| Software Engineering Intern }
 \location{May 2015 - Aug 2015 | Kirkland, WA}
 \begin{tightemize}
-\item Implemented  exploitability  engine  in  Breakpad,  an  open  source  crash  reporting  suitewritten  in  C++used  to  analyze  crashes  in  Chrome  and  Google  Compute  Engine  instances,  and  pushed  changes  into  production.
-\item Added exploitability detection heuristics within Breakpad, allowing the crash processor to detect if a program instance crash happened as a result of an attacker trying to exploit the program.
+\item Implemented an exploitability detection engine in Breakpad, an open source crash reporting suite written in C++, and deployed the exploitability hueristics into Google's pipeline, analyzing all future internal crashes of Google Compute Engine instances and Google Chrome.
+\item Pushed internal changes upstream into the open source Breakpad repository, allowing all external users to analyze the exploitability of their crashed binaries.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{University of Maryland}
+\runsubsection{UMD Computer Science Department}
 \descript{| Teacher Assistant}
 \location{Jan 2015 – May 2017 | College Park, MD}
 \begin{tightemize}
@@ -86,47 +57,40 @@ Git
 \descript{| Network Security Intern}
 \location{May 2014 - Aug 2014 | Adelphi, MD}
 \begin{tightemize}
-\item Scraped Google Code Jam coding competition data by writing a Python web crawler for a data mining corpus.
-\item Wrote a Java lexical analysis tool to construct feature sets from syntactical properties of source code samples.
-\item Used the WEKA data-mining suite to analyze trends between authors and properties of source code in order to develop effective methods of identifying anonymous authors of source code.
+\item Scraped data from the Google Code Jam coding competition by writing a Python web crawler to extract all entries from previous years of the competition.
+\item Constructed features sets of source code samples by building a lexical analysis tool to parse code source for features.
+\item Coauthored a research paper detailing authorship attribution for anonymous samples of source code via code stylometry. The paper was presented in the USENIX security conference in 2015.
 \end{tightemize}
 \sectionsep
 
-\section{Projects}
-\runsubsection{ShipIt}
-\descript{| Daemon Dash}
-\location{Jan 2017 | College Park, MD}
-\begin{tightemize}
-\item Built an educational live video platform with React.js that allows lecturers to share live source code with students who can remotely modify and execute the lecture code in real time.
-\item Won 1st place in the Daemon Dash hackathon and best hack prizes from Google and Booz Allen Hamilton.
-\end{tightemize}
+\section{Languages and Tools}
+\begin{minipage}[t]{.45\textwidth}
+\subsection{Programming Languages}
+Java
+\textbullet{} Kotlin
+\textbullet{} JavaScript
+\textbullet{} Python
+\textbullet{} Protobuf
+\textbullet{} C/C++
+\textbullet{} Ruby
+\textbullet{} Go
+\textbullet{} HTML/CSS
 \sectionsep
-
-\runsubsection{LoanR}
-\descript{| Bitcamp}
-\location{Apr 2015 | College Park, MD}
-\begin{tightemize}
-\item Implemented a decentralized micro-loan platform with Node.js that allows users to both offer and take loans.
-\item Won 1st place and the AWS API prize at the 36-hour Bitcamp hackathon with over 1000 competitors.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Honeypot Research Project}
-\descript{}
-\location{Jan 2014 - May 2014 | College Park, MD}
-\begin{tightemize}
-\item Designed and maintained a server that recorded attacker activity to analyze the prevalence of various malware.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{TripSafe}
-\descript{| HackNC}
-\location{Apr 2014 | Raleigh, NC}
-\begin{tightemize}
-\item Developed a home security system built on Java and Arduino that detects physical intruders through tripwire heat sensing and remotely alerts the user in the case it detects a home emergency.
-\item Made finalist at the 24-hour hackathon HackNC and won the SendGrid API prize.
-\end{tightemize}
-\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.45\textwidth}
+\subsection{Technologies}
+Git
+\textbullet{} Vim
+\textbullet{} Android Studio
+\textbullet{} React.js
+\textbullet{} Vue.js
+\textbullet{} MongoDB
+\textbullet{} PostgreSQL
+\textbullet{} IDA  Pro
+\textbullet{} GDB
+\textbullet{} Wireshark
+\end{minipage}
 
 \end{document}
 \documentclass[]{article}
