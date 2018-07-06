@@ -19,14 +19,15 @@
 \usepackage{fontspec, xltxtra, xunicode}
 
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{black}{HTML}{000000}
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
 % Set main fonts
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont[Color=primary, Path=fonts/lato/]{Lato_Lig}
+\setmainfont[Color=primary, Path=fonts/lato/]{Lato_Reg}
 \setsansfont[Scale=MatchLowercase, Ligatures=TeX, Path=fonts/raleway/]{Raleway_ExtraLight}
 \newcommand{\custombold}[1]{
   \color{subheadings}\fontspec[Path=fonts/lato/]{Lato_Reg}\selectfont{#1}\normalfont{}
@@ -38,7 +39,7 @@
 \textblockorigin{0mm}{5mm}
 \newcommand{\lastupdated}{
   \begin{textblock}{60} (165,0)
-    \color{date}\fontspec[Path=fonts/raleway/]{Raleway_ExtraLight}\fontsize{8pt}{10pt}\selectfont{Last Updated on}\today{}
+    \color{date}\fontspec[Path=fonts/raleway/]{Raleway_ExtraLight}\fontsize{8pt}{10pt}\selectfont{Last Updated on }\today{}
   \end{textblock}
 }
 
@@ -46,7 +47,7 @@
 \newcommand{\namesection}[3]{
   \centering{
     \sffamily{}
-    \fontspec[Path=fonts/lato/]{Lato_Hai}\fontsize{40pt}{10cm}\selectfont{#1}
+    \fontspec[Path=fonts/lato/]{Lato_Hai}\color{black}\fontsize{40pt}{10cm}\selectfont{#1}
     \fontspec[Path=fonts/lato/]{Lato_Lig}\selectfont{#2}
   } \\
   \vspace{5pt}
