@@ -44,15 +44,15 @@
 
 % Name command
 \newcommand{\namesection}[3]{
-	\centering{
-		\sffamily{}
-		\fontspec[Path=fonts/lato/]{Lato_Hai}\fontsize{40pt}{10cm}\selectfont{#1}
-		\fontspec[Path=fonts/lato/]{Lato_Lig}\selectfont{#2}
-	} \\
-	\vspace{5pt}
-	\centering{\color{headings}\fontspec[Path=fonts/raleway/]{Raleway_Medium}\fontsize{11pt}{14pt}\selectfont{#3}}
-	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{-15pt}
+  \centering{
+    \sffamily{}
+    \fontspec[Path=fonts/lato/]{Lato_Hai}\fontsize{40pt}{10cm}\selectfont{#1}
+    \fontspec[Path=fonts/lato/]{Lato_Lig}\selectfont{#2}
+  } \\
+  \vspace{5pt}
+  \centering{\color{headings}\fontspec[Path=fonts/raleway/]{Raleway_Medium}\fontsize{11pt}{14pt}\selectfont{#3}}
+  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+  \vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
@@ -62,12 +62,14 @@
 }{}{0em}{}
 
 % Subeadings command
-\titleformat{\subsection}{\color{subheadings}
-\fontspec[Path=fonts/lato/]{Lato_Bol}\fontsize{12pt}{12pt}\selectfont\raggedright\bfseries\uppercase}{}{0em}{}
+\titleformat{\subsection}{
+  \color{subheadings}\fontspec[Path=fonts/lato/]{Lato_Bol}\fontsize{12pt}{12pt}\selectfont\raggedright\bfseries\uppercase
+}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
-\newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path=fonts/lato/]{Lato_Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase{#1}\normalfont}
+\newcommand{\runsubsection}[1]{
+  \color{subheadings}\fontspec[Path=fonts/lato/]{Lato_Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase{#1}\normalfont
+}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path=fonts/raleway/]{Raleway_Medium}\fontsize{11pt}{13pt}\selectfont{#1 \\}\normalfont}
