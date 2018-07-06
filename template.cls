@@ -25,9 +25,9 @@
 \definecolor{subheadings}{HTML}{333333}
 
 % Set main fonts
-\defaultfontfeatures{Mapping=tex-text}
+\defaultfontfeatures{Ligatures=TeX}
 \setmainfont[Color=primary, Path = fonts/lato/]{Lato_Lig}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway_ExtraLight}
+\setsansfont[Scale=MatchLowercase,Ligatures=TeX, Path = fonts/raleway/]{Raleway_ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato_Reg}\selectfont #1 \normalfont}
 
 % Date command
