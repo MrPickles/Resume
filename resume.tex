@@ -1,5 +1,16 @@
 \documentclass[]{template}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "Style Guide"
+%
+% - 80 character line limit
+% - For bulleted paragraphs, put the text in a newline after the \item and keep
+%   a consistent two-space indentation.
+% - For line wraps anywhere else, make the indentation align with where the text
+%   started after the initial tag.
+% - Put newlines (double backslash) on their own lines for readability.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{graphicx,xcolor,fontawesome}
 
 \begin{document}
@@ -9,12 +20,13 @@
 \namesection{}{Andrew Liu}
 {
   \faHome \, \urlstyle{same}\url{https://andrew.cloud/}
-  \textcolor{black}{\textbullet}
-  \faGithub \, \href{https://github.com/MrPickles}{MrPickles} \\
+  \textcolor{white}{\textbullet} % invisible bullet for spacing
+  \faGithub \, \href{https://github.com/MrPickles}{MrPickles}
+  \\ % newline for spacing
   \faEnvelope \, \href{mailto:aliu1@umd.edu}{aliu1@umd.edu}
-  \textcolor{black}{\textbullet}
+  \textcolor{white}{\textbullet} % invisible bullet for spacing
   \faLinkedin \, \href{https://linkedin.com/in/liuandrewk}{liuandrewk}
-  \textcolor{black}{\textbullet}
+  \textcolor{white}{\textbullet} % invisible bullet for spacing
   \faPhone \, \href{tel:2029059225}{202-905-9225}
 }
 
@@ -24,7 +36,8 @@
 \location{Sept 2013 - May 2017 | College Park, MD}
 \begin{tightemize}
 \item GPA: 3.97/4.0 --- Magna Cum Laude
-\item ACES Cybersecurity Honors Program graduate and President's Scholarship recipient
+\item ACES Cybersecurity Honors Program graduate
+      and President's Scholarship recipient
 \end{tightemize}
 \sectionsep
 
@@ -34,11 +47,24 @@
 \descript{| Software Engineer }
 \location{August 2017 – Present | Mountain View, CA}
 \begin{tightemize}
-\item Improved usability of Google login challenges by A/B testing and iterating upon the UI of Google Prompts, increasing its pass-rate by 10\% and raising overall sign-in success rates for Google by 5\%.
-\item Tripled the coverage of Google Prompts to cover 140 million users and reduced SMS verification costs by integrating notifications to be sent to the iOS Gmail app in login situations.
-\item Integrated risk-based reauthentication into over 300 qps of sensitive Google flows, including the account security settings and the OAuth grant flow.
-\item Maintained authentication APIs and consulted for customer teams, leading to support for Google services such as 2FA for Google Cloud instances and the Secure LDAP service.
-\item Migrated Google Authenticator away from internal technologies, and released an open source version of the app.
+\item
+  Improved usability of Google login challenges by A/B testing and iterating
+  upon the UI of Google Prompts, increasing its pass-rate by 10\% and raising
+  overall sign-in success rates for Google by 5\%.
+\item
+  Tripled the coverage of Google Prompts to cover 140 million users and reduced
+  SMS verification costs by integrating notifications to be sent to the iOS
+  Gmail app in login situations.
+\item
+  Integrated risk-based reauthentication into over 300 qps of sensitive Google
+  flows, including the account security settings and the OAuth grant flow.
+\item
+  Maintained authentication APIs and consulted for customer teams, leading to
+  support for Google services such as 2FA for Google Cloud instances and the
+  Secure LDAP service.
+\item
+  Migrated Google Authenticator away from internal technologies, and released an
+  open source version of the app.
 \end{tightemize}
 \sectionsep
 
@@ -46,8 +72,14 @@
 \descript{| Software Engineering Intern }
 \location{May 2016 – Aug 2016 | San Francisco, CA}
 \begin{tightemize}
-\item Cut the load time for the Dropbox website landing page by approximately 33\% through analyzing blocking operations in Dropbox's Python backend and replacing them with asynchronous tasks.
-\item Promoted team upgrades to Dropbox Business by building an end-to-end flow in React.js and Python that allowed members of Dropbox teams to request an upgrade to Dropbox Business to their admins.
+\item
+  Cut the load time for the Dropbox website landing page by approximately 33\%
+  through analyzing blocking operations in Dropbox's Python backend and
+  replacing them with asynchronous tasks.
+\item
+  Promoted team upgrades to Dropbox Business by building an end-to-end flow in
+  React.js and Python that allowed members of Dropbox teams to request an
+  upgrade to Dropbox Business to their admins.
 \end{tightemize}
 \sectionsep
 
@@ -55,8 +87,15 @@
 \descript{| Software Engineering Intern }
 \location{May 2015 - Aug 2015 | Kirkland, WA}
 \begin{tightemize}
-\item Implemented an exploitability detection engine in Breakpad (an open source crash reporting suite written in C++), and deployed the exploitability hueristics into Google's crash triaging pipeline, analyzing all internal crashes of Google Compute Engine instances and Google Chrome.
-\item Pushed internal changes upstream into the open source Breakpad repository, allowing all external users to analyze the exploitability of their crashed binaries.
+\item
+  Implemented an exploitability detection engine in Breakpad (an open source
+  crash reporting suite written in C++), and deployed the exploitability
+  hueristics into Google's crash triaging pipeline, analyzing all internal
+  crashes of Google Compute Engine instances and Google Chrome.
+\item
+  Pushed internal changes upstream into the open source Breakpad repository,
+  allowing all external users to analyze the exploitability of their crashed
+  binaries.
 \end{tightemize}
 \sectionsep
 
@@ -64,7 +103,10 @@
 \descript{| Teacher Assistant}
 \location{Jan 2015 – May 2017 | College Park, MD}
 \begin{tightemize}
-\item Instructed classes and held office hours on several topics varying across classes such as dynamic memory management, multithreading, advanced data structures, algorithms, and networking protocols.
+\item
+  Instructed classes and held office hours on several topics varying across
+  classes such as dynamic memory management, multithreading, advanced data
+  structures, algorithms, and networking protocols.
 \end{tightemize}
 \sectionsep
 
@@ -72,13 +114,22 @@
 \descript{| Security Research Intern}
 \location{May 2014 - Aug 2014 | Adelphi, MD}
 \begin{tightemize}
-\item Scraped corpus data from the Google Code Jam coding competition by writing a Python web crawler to extract all participant source code entries throughout the history of the competition.
-\item Constructed features sets of source code samples by building a lexical analysis tool to parse code source for features.
-\item Coauthored a research paper for the USENIX security conference in 2015, detailing authorship attribution for anonymous samples of source code via code stylometry.
+\item
+  Scraped corpus data from the Google Code Jam coding competition by writing a
+  Python web crawler to extract all participant source code entries throughout
+  the history of the competition.
+\item
+  Constructed features sets of source code samples by building a lexical
+  analysis tool to parse code source for features.
+\item
+  Coauthored a research paper for the USENIX security conference in 2015,
+  detailing authorship attribution for anonymous samples of source code via code
+  stylometry.
 \end{tightemize}
 \sectionsep
 
 \section{Languages and Tools}
+
 \begin{minipage}[t]{.45\textwidth}
 \subsection{Programming Languages}
 Java
@@ -92,10 +143,11 @@ HTML/CSS
 \textbullet{} C/C++
 \textbullet{} Ruby
 \textbullet{} Go
-
 \sectionsep
 \end{minipage}
+
 \hfill
+
 \begin{minipage}[t]{.45\textwidth}
 \subsection{Tools and Technologies}
 Git
