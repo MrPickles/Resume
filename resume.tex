@@ -46,58 +46,68 @@
 \section{Experience}
 
 \runsubsection{Google}
-\descript{| Software Engineer }
+\descript{| Software Engineer}
 \location{August 2017 – Present | Mountain View, CA}
 \begin{tightemize}
 \item
-  Improved usability of Google login challenges by A/B testing and iterating
-  upon the UI of Google Prompts, increasing its pass-rate by 10\% and raising
-  overall sign-in success rates for Google by 5\%.
+  Built risk-based re-authentication integrations into key Google flows,
+  scanning over 400 queries-per-second of potential hijacker traffic.
+  Refactored re-auth proof token exchanging system to filter out untrusted
+  devices as second factor challenge recipients and to opportunistically block
+  risky users.
 \item
-  Tripled the coverage of Google Prompts to cover 140 million users and reduced
-  SMS verification costs by integrating notifications to be sent to the iOS
-  Gmail app in login situations.
+  Maintained internal authentication APIs. Consulted for and collaborated with
+  all teams looking to integrate with an authentication API, leading to LDAP
+  support for G Suite customers and two-factor authentication in Google Cloud
+  virtual machines.
 \item
-  Integrated risk-based reauthentication into over 300 qps of sensitive Google
-  flows, including the account security settings and the OAuth grant flow.
+  Added support for sending Google Prompts to the iOS Gmail app during login,
+  effectively tripling Google Prompt coverage for iOS users to 140 million
+  users.
 \item
-  Maintained authentication APIs and consulted for customer teams, leading to
-  support for Google services such as 2FA for Google Cloud instances and the
-  Secure LDAP service.
+  Conducted A/B tests and analyzed data on authentication UX and policies.
+  Prototyped a new challenge where users could scan a QR code to approve a
+  sign-in from a remote browser. Improved pass rate of Google Prompts by 10\%
+  and overall success rate for Google sign-in by 5\%, through the aforementioned
+  experiments.
 \item
-  Migrated Google Authenticator away from internal technologies, and released an
-  open source version of the app.
+  Migrated Google Authenticator's build system to Bazel and removed all of the
+  app's internal dependencies. Currently in the process of releasing an open
+  source version of the Android app.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Dropbox}
-\descript{| Software Engineering Intern }
+\descript{| Software Engineering Intern}
 \location{May 2016 – Aug 2016 | San Francisco, CA}
 \begin{tightemize}
 \item
-  Cut the load time for the Dropbox website landing page by approximately 33\%
-  through analyzing blocking operations in Dropbox's Python backend and
-  replacing them with asynchronous tasks.
+  Investigated and analyzed performance issues with Dropbox's Python web server.
+  Fixed server inefficiencies, typically through refactoring expensive
+  operations into asynchronous tasks. Reduced the loading time of Dropbox's
+  website homepage by 33\% as a result of the optimizations.
 \item
-  Promoted team upgrades to Dropbox Business by building an end-to-end flow in
-  React.js and Python that allowed members of Dropbox teams to request an
-  upgrade to Dropbox Business to their admins.
+  Implemented an end-to-end flow written with React.js and Python to let users
+  request team upgrades to Dropbox Business. Integrated with an RPC service to
+  send email campaigns to Dropbox team admins receiving upgrade requests.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Google}
-\descript{| Software Engineering Intern }
+\descript{| Software Engineering Intern}
 \location{May 2015 - Aug 2015 | Kirkland, WA}
 \begin{tightemize}
 \item
-  Implemented an exploitability detection engine in Breakpad (an open source
-  crash reporting suite written in C++), and deployed the exploitability
-  hueristics into Google's crash triaging pipeline, analyzing all internal
-  crashes of Google Compute Engine instances and Google Chrome.
+  Created an exploitability detection engine in Breakpad (an open source crash
+  reporting suite written in C++) that determined the likelihood that a binary
+  crash occurred due to attacker exploitation. Implemented triaging hueristics
+  such as buffer overflow detection and binary permission checking.
 \item
-  Pushed internal changes upstream into the open source Breakpad repository,
-  allowing all external users to analyze the exploitability of their crashed
-  binaries.
+  Deployed the exploitability engine into Google's crash triaging pipeline,
+  scanning all internal crashes of Google Compute Engine instances and Google
+  Chrome for traces of exploitation.
+\item
+  Open sourced all internal changes to Breakpad for public usage and auditing.
 \end{tightemize}
 \sectionsep
 
@@ -106,9 +116,9 @@
 \location{Jan 2015 – May 2017 | College Park, MD}
 \begin{tightemize}
 \item
-  Instructed classes and held office hours on several topics varying across
-  classes such as dynamic memory management, multithreading, advanced data
-  structures, algorithms, and networking protocols.
+  Lead lectures and discussions for classes of over 30 students across four
+  semesters. Graded exams and held office hours covering topics ranging across
+  computer systems, networks, data structures, and algorithms.
 \end{tightemize}
 \sectionsep
 
@@ -117,16 +127,16 @@
 \location{May 2014 - Aug 2014 | Adelphi, MD}
 \begin{tightemize}
 \item
-  Scraped corpus data from the Google Code Jam coding competition by writing a
-  Python web crawler to extract all participant source code entries throughout
-  the history of the competition.
-\item
-  Constructed features sets of source code samples by building a lexical
-  analysis tool to parse code source for features.
-\item
   Coauthored a research paper for the USENIX security conference in 2015,
-  detailing authorship attribution for anonymous samples of source code via code
-  stylometry.
+  detailing the usage of code stylometry and machine learning as a means of
+  authorship attribution for anonymous samples of source code.
+\item
+  Wrote a Python web crawler to scrape historical source code entries from
+  programmers participating in the Google Code Jam programming competition.
+  Cleaned up scraped source code for use as a corpus of training data.
+\item
+  Constructed features sets for source code by building a lexical analysis tool
+  in Java to analyze common features present in source code samples.
 \end{tightemize}
 \sectionsep
 
