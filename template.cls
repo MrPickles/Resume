@@ -106,6 +106,7 @@
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{
+  \raggedright
   \color{subheadings}
   \fontspec[Path=fonts/lato/]{Lato_Bol}
   \fontsize{12pt}{12pt}
