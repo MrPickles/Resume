@@ -64,27 +64,20 @@
 }
 
 % Name command
-\newcommand{\namesection}[3]{
-  \centering{
+\newcommand{\namesection}[2]{
+  \begin{center}
     \sffamily{}
-    \fontspec[Path=fonts/lato/]{Lato_Hai}
     \color{black}
     \fontsize{40pt}{10cm}
-    \selectfont{#1}
     \fontspec[Path=fonts/lato/]{Lato_Lig}
-    \selectfont{#2}
-  }
-  \\ % newline
-  \vspace{5pt}
-  \centering{
+    \selectfont{#1}
+    \\ % newline
     \color{headings}
     \fontspec[Path=fonts/raleway/]{Raleway_Medium}
     \fontsize{11pt}{14pt}
-    \selectfont{#3}
-  }
-  \noindent
-  \makebox[\linewidth]{}
-  \vspace{-15pt}
+    \selectfont{#2}
+    \vspace{-10pt}
+  \end{center}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
