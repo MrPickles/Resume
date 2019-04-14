@@ -53,7 +53,8 @@
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm}
 \newcommand{\lastupdated}{
-  \begin{textblock}{60} (165,0)
+  % we'll put the date in the bottom right corner
+  \begin{textblock}{60} (161.5, 265)
     \color{date}
     \fontspec[Path=fonts/raleway/]{Raleway_ExtraLight}
     \fontsize{8pt}{10pt}
