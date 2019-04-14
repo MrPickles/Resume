@@ -72,6 +72,7 @@
     \fontspec[Path=fonts/lato/]{Lato_Lig}
     \selectfont{#1}
     \\ % newline
+    \vspace{5pt}
     \color{headings}
     \fontspec[Path=fonts/raleway/]{Raleway_Medium}
     \fontsize{11pt}{14pt}
