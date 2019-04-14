@@ -1,0 +1,6 @@
+# Ignore everything except whitelisted files.
+*
+!/resume.pdf
+!/index.html
+!/README.md
+!/.gitignore
