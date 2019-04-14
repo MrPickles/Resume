@@ -15,7 +15,7 @@
 
 \begin{document}
 
-\lastupdated
+%\lastupdated
 
 \namesection{}{Andrew Liu}
 {
@@ -33,9 +33,10 @@
 \section{Education}
 
 \runsubsection{University of Maryland, College Park}
-\descript{| BS in Computer Science, minor in Statistics}
+\hfill
 \location{Sept 2013 - May 2017 | College Park, MD}
 \begin{tightemize}
+\item BS in Computer Science, minor in Statistics
 \item GPA: 3.97/4.0 --- Magna Cum Laude
 \item ACES Cybersecurity Honors Program graduate
       and President's Scholarship recipient
@@ -44,18 +45,20 @@
 \section{Experience}
 
 \runsubsection{Google}
-\descript{| Software Engineer}
+\descript{Software Engineer}
+\hfill
 \location{August 2017 – Present | Mountain View, CA}
 \begin{tightemize}
 \item
   Built risk-based re-authentication integrations into key Google flows,
   scanning over 400 queries-per-second of potential hijacker traffic.
+\item
   Refactored re-auth proof token exchanging system to filter out untrusted
   devices as second factor challenge recipients and to opportunistically block
   risky users.
 \item
-  Maintained internal authentication APIs. Consulted for and collaborated with
-  all teams looking to integrate with an authentication API, leading to LDAP
+  Consulted for and collaborated with
+  teams looking to integrate with an authentication API, enabling LDAP
   support for G Suite customers and two-factor authentication in Google Cloud
   virtual machines.
 \item
@@ -64,10 +67,12 @@
   users.
 \item
   Conducted A/B tests and analyzed data on authentication UX and policies.
-  Prototyped a new challenge where users could scan a QR code to approve a
-  sign-in from a remote browser. Improved pass rate of Google Prompts by 10\%
+  Improved pass rate of Google Prompts by 10\%
   and overall success rate for Google sign-in by 5\%, through the aforementioned
   experiments.
+\item
+  Prototyped a new challenge where users could scan a QR code to approve a
+  sign-in from a remote browser.
 \item
   Migrated Google Authenticator's build system to Bazel and removed all of the
   app's internal dependencies. Currently in the process of releasing an open
@@ -77,13 +82,13 @@
 \sectionsep
 
 \runsubsection{Dropbox}
-\descript{| Software Engineering Intern}
+\descript{Software Engineering Intern}
+\hfill
 \location{May 2016 – Aug 2016 | San Francisco, CA}
 \begin{tightemize}
 \item
   Investigated and analyzed performance issues with Dropbox's Python web server.
-  Fixed server inefficiencies, typically through refactoring expensive
-  operations into asynchronous tasks. Reduced the loading time of Dropbox's
+  Fixed server inefficiencies, reducing the loading time of Dropbox's
   website homepage by 33\% as a result of the optimizations.
 \item
   Implemented an end-to-end flow written with React.js and Python to let users
@@ -94,13 +99,14 @@
 \sectionsep
 
 \runsubsection{Google}
-\descript{| Software Engineering Intern}
+\descript{Software Engineering Intern}
+\hfill
 \location{May 2015 - Aug 2015 | Kirkland, WA}
 \begin{tightemize}
 \item
   Created an exploitability detection engine in Breakpad (an open source crash
-  reporting suite written in C++) that determined the likelihood that a binary
-  crash occurred due to attacker exploitation. Implemented triaging hueristics
+  reporting suite written in C++) that predicted whether a binary
+  crash occurred due to attacker exploitation by implementing triaging heuristics
   such as buffer overflow detection and binary permission checking.
 \item
   Deployed the exploitability engine into Google's crash triaging pipeline,
@@ -113,7 +119,8 @@
 \sectionsep
 
 \runsubsection{US Army Research Laboratory}
-\descript{| Security Research Intern}
+\descript{Security Research Intern}
+\hfill
 \location{May 2014 - Aug 2014 | Adelphi, MD}
 \begin{tightemize}
 \item
@@ -129,38 +136,36 @@
   in Java to analyze common features present in source code samples.
 \end{tightemize}
 
-\section{Languages and Tools}
+\section{Skills}
 
-\begin{minipage}[t]{.45\textwidth}
-\subsection{Programming Languages}
-Java
-\textbullet{} Kotlin
-\textbullet{} Protobuf
-\textbullet{} Python
-\textbullet{} SQL
-\\ % newline for spacing
-HTML/CSS
-\textbullet{} JavaScript
-\textbullet{} C/C++
-\textbullet{} Ruby
-\textbullet{} Go
+\subsection{Languages}
+Java,
+Kotlin,
+Protobuf,
+Python,
+SQL,
+HTML/CSS,
+JavaScript,
+TypeScript,
+C/C++,
+Ruby,
+Go
+
 \sectionsep
-% The three commands below need to be contiguous to keep formatting correct.
-\end{minipage} \hfill \begin{minipage}[t]{.45\textwidth}
-\subsection{Tools and Technologies}
-Git
-\textbullet{} Mercurial
-\textbullet{} gRPC
-\textbullet{} React.js
-\textbullet{} Vue.js
-\textbullet{} PostgreSQL
-\\ % newline for spacing
-MongoDB
-\textbullet{} Wireshark
-\textbullet{} IDA Pro
-\textbullet{} GDB
-\textbullet{} gRPC
-\end{minipage}
-% For formatting purposes, we can't have an empty line here.
+
+\subsection{Technologies}
+Git,
+Mercurial,
+gRPC,
+Dagger,
+Guice,
+Jupyter/Colaboratory,
+React.js,
+Vue.js,
+PostgreSQL,
+MongoDB,
+Wireshark,
+IDA Pro,
+GDB
 \end{document}
 \documentclass[]{article}
