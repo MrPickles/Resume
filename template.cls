@@ -83,7 +83,7 @@
     \selectfont{#3}
   }
   \noindent
-  \makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+  \makebox[\linewidth]{}
   \vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
