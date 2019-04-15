@@ -49,29 +49,31 @@
 \location{August 2017 – Present | Mountain View, CA}
 \begin{tightemize}
 \item
-  Built risk-based re-authentication integrations into key Google flows,
-  scanning over 400 queries-per-second of potential hijacker traffic.
+  Built risk-based re-authentication integrations into Google servers such as
+  the Account Security site and the OAuth token exchange service. The
+  integrations scan over 400 queries-per-second of potential hijacker traffic
+  and opportunistically redirect suspicious users to the login page.
 \item
-  Refactored re-auth proof token exchanging system to filter out untrusted
-  devices as second factor challenge recipients and to opportunistically block
-  risky users.
+  Maintained internal microservices exposing authentication APIs over HTTP and
+  RPC. Consulted for and collaborated with teams looking to integrate with an
+  authentication API, leading to public launches such as LDAP-as-a-service for
+  G Suite customers and two-factor authentication in Google Cloud virtual
+  machines.
 \item
-  Consulted for and collaborated with
-  teams looking to integrate with an authentication API, enabling LDAP as a
-  service for G Suite customers and two-factor authentication in Google Cloud
-  virtual machines.
+  Allowed the login page to send Google Prompts to the iOS Gmail app by
+  modifying the login UI to support the app and by making the Java login server
+  ping the valid Gmail apps via RPC when sending Google Prompts. Tripled Google
+  Prompt coverage for iOS users to 140 million users.
 \item
-  Added support for sending Google Prompts to the iOS Gmail app during login,
-  effectively tripling Google Prompt coverage for iOS users to 140 million
-  users.
+  Designed and prototyped a end-to-end login challenge where users could scan QR
+  codes to approve their sign-in attempts from a remote browser. Created a
+  challenge UI to generate QR codes using Soy and JavaScript, and transferred
+  transaction state across several Java servers.
 \item
-  Conducted A/B tests and analyzed data on authentication UX and policies.
-  Improved pass rate of Google Prompts by 10\%
-  and overall success rate for Google sign-in by 5\%, through the aforementioned
-  experiments.
-\item
-  Prototyped a new login challenge where users could scan a QR code to approve a
-  sign-in from a remote browser.
+  Conducted A/B tests and analyzed data on various authentication features.
+  Wrote Jupyter Notebooks to communicate experiment results with teammates.
+  Improved pass rate of Google Prompts by 10\% and overall success rate for
+  Google sign-in by 5\%, through the aforementioned experiments.
 \item
   Migrated Google Authenticator's build system to Bazel and removed all of the
   app's internal dependencies. Currently in the process of releasing an open
@@ -108,10 +110,6 @@
   crash occurred due to attacker exploitation by implementing triaging heuristics
   such as buffer overflow detection and binary permission checking.
 \item
-  Deployed the exploitability engine into Google's crash triaging pipeline,
-  scanning all internal crashes of Google Compute Engine instances and Google
-  Chrome for traces of exploitation.
-\item
   Open sourced all internal changes to Breakpad for public usage and auditing.
 \end{tightemize}
 
@@ -130,9 +128,6 @@
   Wrote a Python web crawler to scrape historical source code entries from
   programmers participating in the Google Code Jam programming competition.
   Cleaned up scraped source code for use as a corpus of training data.
-\item
-  Constructed features sets for source code by building a lexical analysis tool
-  in Java to analyze common features present in source code samples.
 \end{tightemize}
 
 \section{Skills}
@@ -140,7 +135,6 @@
 \subsection{Languages}
 Java,
 Kotlin,
-Protobuf,
 Python,
 SQL,
 HTML/CSS,
@@ -148,7 +142,9 @@ JavaScript,
 TypeScript,
 C/C++,
 Ruby,
-Go
+Go,
+\LaTeX,
+R
 
 \sectionsep
 
