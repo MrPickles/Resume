@@ -27,6 +27,7 @@
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec, xltxtra, xunicode}
+\usepackage{enumitem}
 
 % Color definitions
 \definecolor{black}{HTML}{000000}
@@ -147,5 +148,14 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}
-  {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
-  {\end{itemize}\vspace{-\topsep}}
+  {
+    \vspace{-\topsep}
+    \begin{itemize}[rightmargin=1cm]
+    \itemsep1pt
+    \parskip0pt
+    \parsep0pt
+  }
+  {
+    \end{itemize}
+    \vspace{-\topsep}
+  }
