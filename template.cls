@@ -143,6 +143,17 @@
   \normalfont
 }
 
+% Tech stack command
+\newcommand{\techstack}[1]{
+  \color{headings}
+  \raggedright
+  \fontspec[Path=fonts/raleway/]{Raleway_Medium}
+  \fontsize{10pt}{12pt}
+  \selectfont
+  {Tech stack:#1}
+  \normalfont
+}
+
 % Section separators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
 

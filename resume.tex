@@ -49,26 +49,22 @@
 \location{August 2017 – Present | Mountain View, CA}
 \begin{tightemize}
 \item
-  Built risk-based re-authentication integrations into Google servers such as
-  the Account Security site and the OAuth token exchange service. The
-  integrations scan over 400 queries-per-second of potential hijacker traffic
-  and opportunistically redirect suspicious users to the login page.
+  Built risk-based re-authentication integrations into Google servers, scanning
+  over 400 queries-per-second of potential hijacker traffic via RPC and
+  opportunistically serving suspicious users second factor auth challenges.
 \item
   Maintained internal microservices exposing authentication APIs over HTTP and
-  RPC. Consulted for and collaborated with teams looking to integrate with an
-  authentication API, leading to public launches such as LDAP-as-a-service for
-  G Suite customers and two-factor authentication in Google Cloud virtual
-  machines.
+  RPC. Consulted and collaborated with teams looking to integrate with these
+  APIs, leading to public launches such as LDAP-as-a-service for G Suite
+  customers and two-factor authentication in Google Cloud virtual machines.
 \item
-  Allowed the login page to send Google Prompts to the iOS Gmail app by
-  modifying the login UI to support the app and by making the Java login server
-  ping the valid Gmail apps via RPC when sending Google Prompts. Tripled Google
-  Prompt coverage for iOS users to 140 million users.
+  Added UI support on the login page for sending Google Prompts to the iOS Gmail
+  app. Tripled Google Prompt coverage for iOS users to 140 million users.
 \item
   Designed and prototyped a end-to-end login challenge where users could scan QR
-  codes to approve their sign-in attempts from a remote browser. Created a
-  challenge UI to generate QR codes using Soy and JavaScript, and transferred
-  transaction state across several Java servers.
+  codes to approve their sign-in attempts from a remote browser. Created
+  challenge pages to generate QR codes and approve logins using Soy and
+  JavaScript, and maintained transaction state across several Java servers.
 \item
   Conducted A/B tests and analyzed data on various authentication features.
   Wrote Jupyter Notebooks to communicate experiment results with teammates.
@@ -78,6 +74,22 @@
   Migrated Google Authenticator's build system to Bazel and removed all of the
   app's internal dependencies. Currently in the process of releasing an open
   source version of the Android app.
+\item
+  \techstack{
+    Java,
+    C++,
+    Python,
+    JavaScript,
+    SQL,
+    Soy,
+    Guice,
+    Dagger,
+    Bazel,
+    gRPC,
+    Jupyter,
+    Git,
+    Mercurial
+  }
 \end{tightemize}
 
 \sectionsep
@@ -94,7 +106,15 @@
 \item
   Implemented an end-to-end flow written with React.js and Python to let users
   request team upgrades to Dropbox Business. Integrated with an RPC service to
-  send email campaigns to Dropbox team admins receiving upgrade requests.
+  send email campaigns to Dropbox team admins.
+\item
+  \techstack{
+    Python,
+    React.js,
+    Pxyl,
+    Vagrant,
+    Git
+  }
 \end{tightemize}
 
 \sectionsep
@@ -106,9 +126,9 @@
 \begin{tightemize}
 \item
   Created an exploitability detection engine in Breakpad (an open source crash
-  reporting suite written in C++) that predicted whether a binary
-  crash occurred due to attacker exploitation by implementing triaging heuristics
-  such as buffer overflow detection and binary permission checking.
+  reporting suite written in C++) that predicted whether a binary crash occurred
+  due to attacker exploitation by implementing triaging heuristics such as
+  buffer overflow detection and binary permission checking.
 \item
   Open sourced all internal changes to Breakpad for public usage and auditing.
 \end{tightemize}
@@ -140,6 +160,7 @@ SQL,
 HTML/CSS,
 JavaScript,
 TypeScript,
+Soy,
 C/C++,
 Ruby,
 Go,
@@ -152,8 +173,8 @@ R
 Git,
 Mercurial,
 gRPC,
-Dagger,
 Guice,
+Dagger,
 Jupyter/Colaboratory,
 React.js,
 Vue.js,
