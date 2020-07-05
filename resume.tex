@@ -3,7 +3,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % "Style Guide"
 %
-% - 80 character line limit
+% - 80 character line limit.
+% - Start new sentences on a new line.
 % - For bulleted paragraphs, put the text in a newline after the \item and keep
 %   a consistent two-space indentation.
 % - For line wraps anywhere else, make the indentation align with where the text
@@ -38,58 +39,84 @@
 \item BS in Computer Science, minor in Statistics
 \item GPA: 3.97/4.0 --- Magna Cum Laude
 \item ACES Cybersecurity Honors Program graduate
-      and President's Scholarship recipient
+\item President's Scholarship recipient
 \end{tightemize}
 
 \section{Experience}
 
+\runsubsection{Scale AI}
+\descript{Software Engineer}
+\hfill
+\location{August 2019 – Present | San Francisco, CA}
+\begin{tightemize}
+\item
+  Built an automated system to apply ML-generated segmentation predictions onto
+  images used for ground truth labeling.
+  Reduced the overall time required to generate semantic segmentation labels on
+  images by 30\%.
+\item
+  Minimized labeler churn by implementing a pipeline to proactively prepay
+  trusted workers.
+  The prepayment pipeline handles projected wage calculation and payment
+  eligibility, sending over \$10,000 per week to workers.
+\item
+  Created an orchestrator service to route requests among all of Scale's ML
+  inference microservices via NATS protocol.
+  Integrated a model-training frontend on top of the orchestrator to allow
+  non-engineers to train models with their own configuration and hyperparameter
+  specification.
+\item
+  \techstack{
+    TypeScript,
+    React,
+    Python,
+    MongoDB,
+    PostgreSQL,
+    NATS,
+    Kubernetes,
+    Terraform
+  }
+\end{tightemize}
+
+\sectionsep
+
 \runsubsection{Google}
 \descript{Software Engineer}
 \hfill
-\location{August 2017 – Present | Mountain View, CA}
+\location{August 2017 – August 2019 | Mountain View, CA}
 \begin{tightemize}
 \item
-  Built risk-based re-authentication integrations into Google servers, scanning
-  over 400 queries-per-second of potential hijacker traffic via RPC and
-  opportunistically serving suspicious users second factor auth challenges.
+  Integrated risk-based re-authentication RPC services into various Google
+  frontends, scanning over 400 queries-per-second of potential hijacker traffic.
 \item
-  Maintained internal microservices that exposed authentication APIs over HTTP
-  and RPC. Consulted and collaborated with teams looking to integrate with these
-  APIs, leading to public launches such as LDAP-as-a-service for G Suite
-  customers and two-factor authentication in Google Cloud virtual machines.
+  Maintained various internal authentication API microservices.
+  Consulted for projects using these APIs, such as the Secure LDAP G Suite
+  service and 2FA in Google Cloud virtual machines.
 \item
-  Added UI support on the login page for sending Google Prompts to the iOS Gmail
-  app. Tripled Google Prompt coverage for iOS users to 140 million users.
+  Added UI support to Google login for sending Google Prompts to the iOS Gmail
+  app.
+  Tripled Google Prompt coverage for iOS users to 140 million users.
 \item
-  Designed and prototyped a end-to-end login challenge where users could scan QR
-  codes to approve their sign-in attempts from a remote browser. Created
-  challenge pages to generate QR codes and approve logins using Soy and
-  JavaScript, and maintained approval transaction state across several Java
-  servers.
-\item
-  Conducted A/B tests and analyzed data on various authentication features.
-  Wrote Jupyter Notebooks to communicate experiment results with teammates.
+  Conducted A/B tests and authored Jupyter Notebooks that analyzed data on
+  various authentication features.
   Improved pass rate of Google Prompts by 10\% and overall success rate for
-  Google sign-in by 5\%, through the aforementioned experiments.
+  sign-in by 5\% through the aforementioned experiments.
 \item
   Migrated Google Authenticator's build system to Bazel and removed all of the
-  app's internal dependencies. Released an open source version of the Android
-  app.
+  app's internal dependencies.
+  Released an open source version of the Android app on GitHub.
 \item
   \techstack{
     Java,
     C++,
     Python,
     JavaScript,
-    SQL,
     Soy,
     Guice,
     Dagger,
     Bazel,
     gRPC,
-    Jupyter,
-    Git,
-    Mercurial
+    Jupyter/Colab
   }
 \end{tightemize}
 
@@ -101,20 +128,19 @@
 \location{May 2016 – Aug 2016 | San Francisco, CA}
 \begin{tightemize}
 \item
-  Investigated and analyzed performance issues with Dropbox's Python web server.
-  Fixed server inefficiencies, reducing the loading time of Dropbox's
-  website homepage by 33\% as a result of the optimizations.
+  Investigated performance issues with Dropbox's web server.
+  Fixed server inefficiencies, reducing the loading time of Dropbox's website
+  homepage by 33\% as a result of various optimizations.
 \item
-  Implemented an end-to-end flow written with React.js and Python to let users
-  request team upgrades to Dropbox Business. Integrated with an RPC service to
-  send email campaigns to Dropbox team admins.
+  Implemented an end-to-end promotional flow on the Dropbox website to let users
+  request team upgrades to Dropbox Business.
+  Integrated with an RPC service to send email campaigns to Dropbox team admins.
 \item
   \techstack{
     Python,
-    React.js,
+    React,
     Pxyl,
-    Vagrant,
-    Git
+    Vagrant
   }
 \end{tightemize}
 
@@ -126,64 +152,31 @@
 \location{May 2015 - Aug 2015 | Kirkland, WA}
 \begin{tightemize}
 \item
-  Created an exploitability detection engine in Breakpad (an open source crash
-  reporting suite written in C++) that predicted whether a binary crash occurred
-  due to attacker exploitation by implementing triaging heuristics such as
-  buffer overflow detection and binary permission checking.
+  Created an exploitability detection module in Breakpad (an open source crash
+  reporting suite) that predicts whether a program crash occurred due to
+  attacker exploitation.
+  Implemented triage heuristics such as buffer overflow detection and binary
+  permission checking.
 \item
-  Open sourced all internal changes to Breakpad for public usage and auditing.
+  Pushed all internal changes upstream to the open source version of Breakpad.
 \end{tightemize}
 
 \sectionsep
 
 \runsubsection{US Army Research Laboratory}
-\descript{Security Research Intern}
+\descript{Security Researcher}
 \hfill
 \location{May 2014 - Aug 2014 | Adelphi, MD}
 \begin{tightemize}
 \item
-  Coauthored a research paper for the USENIX security conference in 2015,
-  detailing the usage of code stylometry and machine learning as a means of
-  authorship attribution for anonymous samples of source code.
+  Coauthored a research paper for the USENIX security conference.
+  The paper details the usage of code stylometry and machine learning as a means
+  of authorship attribution for anonymous source code samples.
 \item
-  Wrote a Python web crawler to scrape historical source code entries from
-  programmers participating in the Google Code Jam programming competition.
-  Cleaned up scraped source code for use as a corpus of training data.
+  Wrote a web crawler to scrape historical source code entries from the Google
+  Code Jam programming competition.
+  Cleaned up scraped source code samples to use as a corpus of training data.
 \end{tightemize}
-
-\section{Skills}
-
-\subsection{Languages}
-Java,
-Kotlin,
-Python,
-SQL,
-HTML/CSS,
-JavaScript,
-TypeScript,
-Soy,
-C/C++,
-Ruby,
-Go,
-\LaTeX,
-R
-
-\sectionsep
-
-\subsection{Technologies}
-Git,
-Mercurial,
-gRPC,
-Guice,
-Dagger,
-Jupyter/Colaboratory,
-React.js,
-Vue.js,
-PostgreSQL,
-MongoDB,
-Wireshark,
-IDA Pro,
-GDB
 
 \lastupdated
 
